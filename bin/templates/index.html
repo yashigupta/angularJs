@@ -1,0 +1,123 @@
+<!DOCTYPE HTML>
+
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1"></meta>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></link>
+	<style>
+		input[type=text], input[type=password] {
+		    padding: 7px 10px;
+		    margin: 8px 0;
+		    display: inline-block;
+		    border: 1px solid #ccc;
+		    box-sizing: border-box;
+		}
+	</style>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.min.js">
+	</script>
+	<script src="/js/controller.js"></script>
+	<link rel="stylesheet" type="text/css" href="/css/try.css"></link>
+	<title>>BSE/NSE Arbitrage Recommendation System</title>
+  
+</head>
+
+<body ng-app="testApp">
+	<p align="right">
+		<a href="https://www.facebook.com" target=_blank class="fa fa-facebook" ></a>
+		<a href="https://twitter.com" target=_blank class="fa fa-twitter"></a>
+		<a href="https://www.instagram.com" target=_blank class="fa fa-instagram"></a> 
+	</p>     
+	<div ng-controller="userController" >
+		<div id="div1">
+			<h1 align="center" class="form-horizontal"> <I>BSE/NSE Arbitrage Recommendation System</I></h1>
+			<!-- Login form -->
+			<form class="form-horizontal" name="form" ng-submit="submitForm()">
+				<h3 align="center" id="form">
+					Username : 
+					<input type="text" placeholder="Enter Username" name="username" id="username" ng-model="username" ></input>&#160;&#160;&#160;&#160;&#160;&#160;
+					Password :
+					<input type="password" placeholder="Enter password" name="password" id="password" ng-model="password"></input>&#160;&#160;&#160;&#160;&#160;&#160;
+					<button type="submit" class="btn btn-default" ng-disabled="form.$invalid || dataLoading">Login</button>
+					
+					<div>
+						<p ng-model="postResultMessage" ng-int="postResultMessage = false"></p>
+					</div>
+					</h3>
+			</form>
+		</div>
+		
+		
+		
+		<br>
+		
+		<p id="name"></p>
+		
+		<img src="/image/images.png" align="center" width="1350" height="385" id="img"/>
+		
+		<div ng-if="postResultMessage">
+			<div ng-controller="getcontroller">
+				<div id="tabs" class="tabdata">
+					<button class="tablink" ng-click="getfunction();showme=true;showme1=false">Current
+						Stock</button>
+					<button class="tablink" ng-click="getSaved();showme1=true;showme=false">Saved
+						Stock</button>
+				</div>
+				
+				<!--Display current stock -->
+				<div class="tabledata">								
+					<h2 ng-show="showme">
+					<div  id="currentstock">
+						<center>Current Stock</center>
+						<table border="1" align="center" id="stockTable">
+							<tr>
+									<th>Stockname</th>
+									<th>BSE Price</th>
+									<th>NSE Price</th>
+									<th>Recommendation</th>
+									<th>Profit</th>
+									<th>Save</th>
+							</tr>
+						    <tr ng-repeat="data1 in response">
+				                    <td>{{ data1.stockName }}</td>
+				                    <td>{{ data1.bsePrice }}</td>
+				                    <td>{{ data1.nsePrice }}</td>
+				                    <td>{{ data1.recommendation }}</td>
+				                    <td>{{ data1.profit }}</td>
+				                    <td><input type="button" name="save" value="save" ng-click="toggleSelection(data1)"></td>
+							</tr>
+						</table>
+					</div>
+					</h2>
+					
+					<!-- Display saved stock -->
+					<h2 ng-show="showme1">
+					<div id="savedstock">
+						<Center>Saved Stock</Center>
+						<table border="1" align="center" id="stockTable">
+							<tr>
+									<th>Stockname</th>
+									<th>BSE Price</th>
+									<th>NSE Price</th>
+									<th>Date</th>
+									<th>Time</th>
+									<th>Profit</th>
+							</tr>
+							<tr ng-repeat="data1 in response1">
+				                    <td>{{ data1.stockName }}</td>
+				                    <td>{{ data1.bsePrice }}</td>
+				                    <td>{{ data1.nsePrice }}</td>
+				                    <td>{{ data1.date }}</td>
+				                    <td>{{ data1.time }}</td>
+				                    <td>{{ data1.profit }}</td>
+							</tr>
+						</table>
+					</div>
+					</h2>
+				</div>
+		</div>
+		</div>
+	</div>
+</body>
+</html>
+

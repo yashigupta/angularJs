@@ -1,0 +1,115 @@
+<style>
+input[type=text], input[type=password] {
+    padding: 7px 10px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+#div1 {
+     color : white;
+     background-color : #000080;
+}
+.tabledata{
+	 background-color : #ffffff;
+}
+h1
+{  
+   font-family: Trebuchet MS;
+}
+input[type=button]{
+    padding: 7px 10px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+#name {
+	 color : white;
+     background-color : #000080;
+}
+
+#stockTable {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 50%;
+}
+
+#stockTable td, #stockTable th {
+    border: 1px solid #ddd;
+    padding: 15px;
+    font-size: 16px;
+}
+
+#stockTable tr:nth-child(even){background-color: #f2f2f2;}
+
+#stockTable tr:hover {background-color: #ddd;}
+
+#stockTable th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: #000080;
+    color: white;
+    font-size: 16px;
+}
+
+img {
+    opacity: 0.4;
+}
+.tablink:active
+{
+background-color: #789;
+color: red;
+}
+#tabs.selected {
+    background: #910000;
+    color:#FFFFFF;
+}
+.tablink {
+    background-color: #000080;
+    color: white;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 20px 20px;
+    font-size: 17px;
+    width: 50%;
+}
+
+.tablink:hover {
+    background-color: #777;
+}
+
+.fa {
+  padding: 5px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 3px;
+  border-radius: 50%;
+}
+
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+</style>

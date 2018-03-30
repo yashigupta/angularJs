@@ -1,0 +1,138 @@
+<!DOCTYPE HTML>
+
+<html>
+<head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1"></meta>
+<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></link>
+
+<script
+	src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.min.js">
+	
+</script>
+<script src="/js/controller.js"></script>
+<link rel="stylesheet" type="text/css" href="/css/loginstyle.css"></link>
+<style>
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+}
+
+.content {
+    position: fixed;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+}
+
+#myBtn {
+    width: 200px;
+    font-size: 18px;
+    padding: 10px;
+    border: none;
+    background: #000;
+    color: #fff;
+    cursor: pointer;
+}
+</style>
+
+</head>
+
+<body ng-app="testApp">
+<!-- <video autoplay muted loop id="myVideo">
+  <source src="gujrat.mp4" type="video/mp4">
+  Your browser does not support HTML5 video.
+</video>
+ -->
+	<div ng-controller="userController">
+		<div id="div1">
+		
+			<center><form ng-submit="submitForm()">
+<br>
+   <h1 style="color:white";> LOGIN</h1>
+   <br>
+  <div class="container">
+ <h3 style="color:white";>   Username <input type="text" id="userId" placeholder="Enter Username" name="username" required ng-model="username">
+    
+    <br>
+    Password&nbsp<input type="password" placeholder="Enter Password" name="password" background-color=blue required ng-model="password">
+        
+</h3>
+    <button type="submit" id="loginbutton"ng-disabled="form.$invalid || dataLoading"><b>LOGIN</b></button>
+    <div>
+						<p ng-model="postResultMessage" ng-int="postResultMessage = false"></p>
+					</div>
+    <label><br>
+    
+					
+      <input type="checkbox" checked="checked">Remember me
+		<br>
+    </label>
+    </p>
+  </div>
+</form>
+</center>
+</div>
+
+<!-- <script>
+var video = document.getElementById("myVideo");
+var btn = document.getElementById("myBtn");
+
+function myFunction() {
+  if (video.paused) {
+    video.play();
+    btn.innerHTML = "Pause";
+  } else {
+    video.pause();
+    btn.innerHTML = "Play";
+  }
+}
+</script> -->
+<!-- 
+		<div id="logname">
+		<p id="name"></p>
+		<button id="loutbtn" ng-click=logout()>LOGOUT</button>
+		</div> -->
+
+		<!-- <img src="/image/images.png" align="center" width="1350" height="385"
+			id="img" /> -->
+
+		<div ng-if="postResultMessage">
+		 {{postResultMessage}} 
+			<div ng-controller="getcontroller">
+			<!-- <input type="file" file-model="myFile"></input>
+			 <button ng-click="uploadFile()">upload me</button> -->
+			 	 
+			 <button class="tablink"
+						ng-click="getSaved();showme1=true">Updated Status</button>
+		<div class="tabledata">
+				<h2 ng-show="showme1">
+						<div id="savedstock">
+							<Center>Updated Status</Center>
+							<table border="1" align="center" id="stockTable">
+								<tr>
+									<th>Title</th>
+									<th>Description</th>
+									<th>link</th>
+								</tr>
+								<tr ng-repeat="data in response1">
+									<td>{{ data.title }}</td>
+									<td>{{ data.description }}</td>
+									<td>{{ data.Link }}</td>
+								</tr>
+							</table>
+						</div>
+					</h2>
+					</div>
+					</div>
+		</div>
+		</div>
+</body>
+</html>
+

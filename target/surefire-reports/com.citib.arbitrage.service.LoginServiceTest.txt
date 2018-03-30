@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: com.citib.arbitrage.service.LoginServiceTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 2.954 s <<< FAILURE! - in com.citib.arbitrage.service.LoginServiceTest
+test(com.citib.arbitrage.service.LoginServiceTest)  Time elapsed: 2.954 s  <<< FAILURE!
+java.lang.AssertionError
+	at com.citib.arbitrage.service.LoginServiceTest.test(LoginServiceTest.java:31)
+

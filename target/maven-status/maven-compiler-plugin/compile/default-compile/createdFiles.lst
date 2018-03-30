@@ -1,0 +1,12 @@
+com\citib\arbitrage\model\DisplayScrap.class
+com\citib\arbitrage\model\Login.class
+com\citib\arbitrage\controller\WebController.class
+com\citib\arbitrage\service\LoginService.class
+com\citib\arbitrage\service\SavedService.class
+com\citib\arbitrage\service\MongoDbService.class
+com\citib\arbitrage\service\ScrapService.class
+com\citib\arbitrage\controller\RestWebController.class
+com\citib\arbitrage\model\SavedStock.class
+com\citib\arbitrage\SpringBootAngularJsApplication.class
+com\citib\arbitrage\service\CurrentService.class
+com\citib\arbitrage\model\CurrentStock.class

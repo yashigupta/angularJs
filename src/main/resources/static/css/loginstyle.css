@@ -1,0 +1,50 @@
+body
+{
+	background-size : 100%;
+
+	/* background-image:url("citi15.jpg"); */
+	padding-top: 30px;
+    padding-right: 10px;
+    padding-bottom: 20px;
+    padding-left: 70px;
+	color:grey;
+}
+input[type=text], input[type=password]
+{
+	width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+form
+{
+    width: 35%;
+    height: 120%;
+	top:80%;
+    left:40%;
+  
+    margin-left : 53%;
+     margin-top : 10%;
+    border: 3px solid gray;
+    
+    background-color: black;
+    opacity: 0.7;
+}
+#loginbutton
+{
+    background-color: blue;
+    color: white;
+    padding: 10px 10px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 30%;
+    font-size:20px;
+}
+
+#loginbutton:hover 
+{
+    opacity: 0.8;
+}
