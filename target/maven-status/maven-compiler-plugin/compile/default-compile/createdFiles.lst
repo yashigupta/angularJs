@@ -1,4 +1,5 @@
 com\citib\arbitrage\model\DisplayScrap.class
+com\citib\arbitrage\config\SwaggerConfig.class
 com\citib\arbitrage\model\Login.class
 com\citib\arbitrage\controller\WebController.class
 com\citib\arbitrage\service\LoginService.class

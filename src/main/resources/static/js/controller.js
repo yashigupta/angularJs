@@ -3,7 +3,7 @@ app.controller('userController', function($scope, $http, $location,$window) {
 	$scope.submitForm = function(){
 		alert("In controller");
 		//var url = $location.absUrl() + "postuser";
-		var url="http://localhost:8089/postuser";
+		var url=$location.protocol() + '://'+ $location.host() +':'+  $location.port()+"/postuser";
 		var config = {
                 headers : {
                     'Accept': 'text/plain'

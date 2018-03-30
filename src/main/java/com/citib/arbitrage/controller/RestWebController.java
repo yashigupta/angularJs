@@ -4,6 +4,7 @@ package com.citib.arbitrage.controller;
 import java.io.IOException;
 import java.util.ArrayList;
 
+import io.swagger.annotations.Api;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -20,6 +21,7 @@ import com.citib.arbitrage.service.LoginService;
 import com.citib.arbitrage.service.ScrapService;
 
 @RestController
+@Api
 public class RestWebController {
 
 	@Autowired

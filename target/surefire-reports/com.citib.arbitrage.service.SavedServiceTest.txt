@@ -1,8 +1,0 @@
--------------------------------------------------------------------------------
-Test set: com.citib.arbitrage.service.SavedServiceTest
--------------------------------------------------------------------------------
-Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.001 s <<< FAILURE! - in com.citib.arbitrage.service.SavedServiceTest
-test(com.citib.arbitrage.service.SavedServiceTest)  Time elapsed: 0 s  <<< FAILURE!
-java.lang.AssertionError: Not yet implemented
-	at com.citib.arbitrage.service.SavedServiceTest.test(SavedServiceTest.java:11)
-
